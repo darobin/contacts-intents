@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Intent Test</title>
+  </head>
+  <body>
+    
+    
+    <script>
+      __WEBINTENTS_ROOT = "http://webintents.org/";
+    </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='http://webintents.org/webintents.min.js'></script>
+    <script>
+      var intent = new Intent("http://webintents.org/pick", "http://w3.org/types/contacts", {});
+      window.navigator.startActivity(intent);
+    </script>
+  </body>
+</html>

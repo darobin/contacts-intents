@@ -1,5 +1,6 @@
 
 var express = require("express")
+,   cdb = require("./contacts-db")
 ,   app = module.exports = express.createServer()
 ;
 
@@ -18,11 +19,14 @@ app.configure("production", function(){
 
 // routes
 app.get("/", function (req, res, next) {
-    // XXX return a static index.html that registers the intent
+    res.sendfile("public/index.html");
 });
 
 app.get("/contacts-api", function (req, res, next) {
     // XXX use the query arguments to get the right data
+    db.findContacts("robin", "*", function (err, res) {
+        for (var i = 0, n = res.length; i < n; i++) console.log(res[i].toLiteralObject());
+    });
 });
 
 app.listen(4001);

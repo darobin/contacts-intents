@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Contacts</title>
+    <intent action='http://webintents.org/pick' type='http://w3.org/types/contacts'></intent>
+  </head>
+  <body>
+    <h1>Contacts</h1>
+    <section id='install'>
+      <p>
+        You have now installed the Contacts Picker Intents. It should work from any page
+        that calls it.
+      </p>
+    </section>
+    <section id='pick'>
+      <h2>Pick your Contact</h2>
+    </section>
+    <script>
+      __WEBINTENTS_ROOT = "http://webintents.org/";
+    </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='http://webintents.org/webintents.min.js'></script>
+    <script src='handle-intent.js'></script>
+  </body>
+</html>
