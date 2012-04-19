@@ -1,0 +1,15 @@
+{
+    "name":         "contacts-intent"
+,   "description":  "Experimental Contacts over Intents server for the OS X Address Book"
+,   "version":      "0.0.1"
+,   "author":       "Robin Berjon <robin@berjon.com>"
+,   "dependencies": {
+        "sqlite3":    "*"
+    ,   "mime-magic": "*"
+    ,   "express":    "2.5.5"
+    }
+,   "devDependencies": {
+    }
+,   "repository":   "git://github.com/darobin/contacts-intent"
+,   "main":         "app"
+}
